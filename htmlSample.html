@@ -1,0 +1,108 @@
+<html lang="pt-PT">
+ <head>
+   <title>HTML Sample Webpage</title>
+     <style type="text/css">
+   body {
+	background-color: #7C7C7C;
+	margin:80px 80px 100px 100px;
+   }
+  div#header {
+	 position:fixed;
+	 top:0px;
+	 left:0px;
+	 width:100%;
+	 color:#FFF;
+	 background:#7C7C7C;
+	 padding:18px;
+	 border-style:solid;
+	 border-color:#f90909;
+	 border-bottom-width:thick;
+   }
+  div#footer {
+	 position:fixed;
+	 bottom:0px;
+	 left:0px;
+	 width:100%;
+	 color:#FFF;
+	 background:#7C7C7C; 
+	 padding:8px; 	 
+	 border-style:solid;
+	 border-color:#f90909;
+	 border-bottom-width:thick;
+	 
+ }
+ leftSide {
+  background: #7C7C7C;
+  color:#FFF;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 64px;
+  width: 120px;
+  outline:#FF0000 solid thick;
+  border-left:#f90909;
+ 
+ 
+  }
+  
+  .home {
+  left: 10px;
+  right:0px;
+  top:62px;
+  background:#FFF;
+  margin-left: 115px;
+  min-height: 100%;
+  position: fixed;
+  text-align: center;
+  border-color:#f90909;
+
+}
+
+	button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    font-size: 12px;
+    color   : #fff;
+    cursor  : pointer;
+}
+
+   </style>
+   <script type="text/javascript">
+   function sample(title) {
+   	document.getElementById("description").innerHTML =title;
+   }
+   </script>
+ </head>
+ 
+ <body>
+  <div id="header" align="leftSide">Pridex</div>
+
+  <leftSide>
+    <nav>
+	
+	 <ul type="square">
+      <li><button type="Home" onClick="sample('Home')">Home</button></li>
+      <li><button type="About Us" onClick="sample('About Us')">About Us</button></li>
+      <li><button type="Gallery" onClick="sample('Gallery')">Gallery</button></li>
+      <li><button type="Contact Us" onClick="sample('Contact details comming soon...')">Contact Us</button></li>
+     </ul>
+	 
+    </nav>
+  </leftSide>
+  
+  <div class="home">
+   <section>
+    <h1>Content Here</h1>
+    <p id="description">Home<p>
+   </section>
+  </div>
+  
+  <side-bar>
+  <div id="footer">www.pridex.com</div>
+ </body>
+ 
+ </html>
